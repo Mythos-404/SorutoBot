@@ -17,6 +17,6 @@ def _echo(session: SessionExtension):
 def echo(session: SessionExtension):
     # pil画一个红色的图片
     img = Image.new('RGB', (100, 100), (255, 0, 0))
-    session.send(h.image(img))
-
+    # session.send(h.image(img))
+    session.send('123')
 
