@@ -2,7 +2,7 @@ from bridge.tomorin import on_activator, on_event, h, admin_list, SessionExtensi
 
 @on_event.message_created
 def _help(session: SessionExtension):
-    session.function.register(['help'])
+    session.function.register(['help']) #自定义回复示例
     session.function.description = '帮助'
     session.action(
         {
